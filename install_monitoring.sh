@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git clone https://github.com/Leeeuijooo/prometheus_grafana.git
+cd prometheus_grafana/
+
 cd ./step1
 kubectl apply -f .
 cd ../
