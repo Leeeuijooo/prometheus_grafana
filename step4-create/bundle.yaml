@@ -29804,11 +29804,13 @@ metadata:
   name: prometheus-operator
   namespace: default
 spec:
-  clusterIP: None
+  #clusterIP: None
   ports:
   - name: http
     port: 8080
     targetPort: http
+    nodePort: 30002
+  type: NodePort
   selector:
     app.kubernetes.io/component: controller
     app.kubernetes.io/name: prometheus-operator

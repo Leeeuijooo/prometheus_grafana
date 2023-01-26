@@ -109,6 +109,8 @@ spec:
     port: 443
     protocol: TCP
     targetPort: https
+    nodePort: 30001
+  type: NodePort
   selector:
     k8s-app: metrics-server
 ---
