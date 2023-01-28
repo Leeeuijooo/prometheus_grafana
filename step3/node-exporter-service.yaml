@@ -7,12 +7,10 @@ metadata:
   name: node-exporter
   namespace: monitoring
 spec:
-  #clusterIP: None
+  clusterIP: None
   ports:
   - name: https
     port: 9100
     targetPort: 9100
-    nodePort: 30003
-  type: NodePort
   selector:
     app.kubernetes.io/name: node-exporter
